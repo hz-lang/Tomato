@@ -65,6 +65,7 @@ namespace Tomato
 
                             Dispatcher.Invoke(() =>
                             {
+                                Topmost = false;
                                 Foreground = Brushes.Black;
                                 Background = Brushes.White;
                                 WindowState = WindowState.Normal;
@@ -85,6 +86,7 @@ namespace Tomato
 
                             Dispatcher.Invoke(() =>
                             {
+                                Topmost = true;
                                 Foreground = Brushes.White;
                                 Background = Brushes.Green;
                                 WindowState = WindowState.Maximized;
